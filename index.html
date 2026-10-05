@@ -73,7 +73,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
             <a href="{{ l.href }}" style="font-size:13px; color:#AEB6C2; transition:color 200ms" style-hover="color:#F2F4F7">{{ l.label }}</a>
           </sc-for>
         </nav>
-        <a href="#orcamento" style="display:flex; align-items:center; gap:10px; font-size:13px; font-weight:500; color:#05070A; background:#F2F4F7; padding:10px 16px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-1px)">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+        <a href="#orcamento" style="display:flex; align-items:center; gap:10px; font-size:13px; font-weight:500; color:#05070A; background:#F2F4F7; padding:10px 16px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-1px)">Solicitar orçamento <span aria-hidden="true"></span></a>
       </div>
     </sc-if>
     <sc-if value="{{ mobileNav }}" hint-placeholder-val="{{ false }}">
@@ -90,10 +90,10 @@ input::placeholder,textarea::placeholder{color:#5F6875}
   <div id="menu-mobile" style="position:fixed; top:80px; right:clamp(12px,4vw,40px); z-index:49; width:min(300px, calc(100vw - 24px)); padding:8px 20px 20px; background:rgba(9,12,17,0.94); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(255,255,255,0.08); border-radius:4px; box-shadow:0 30px 60px -20px rgba(0,0,0,0.85), 0 0 50px -24px rgba(168,212,255,0.25); opacity:{{ panelOp }}; transform:{{ panelTf }}; transform-origin:top right; transition:opacity 220ms ease, transform 260ms cubic-bezier(.2,.7,.2,1)">
     <nav aria-label="Navegação mobile" style="display:flex; flex-direction:column">
       <sc-for list="{{ navLinks }}" as="l" hint-placeholder-count="5">
-        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="display:flex; align-items:center; justify-content:space-between; min-height:48px; font-family:'Space Grotesk',sans-serif; font-size:16px; color:#E6EAF0; border-bottom:1px solid rgba(255,255,255,0.06); transition:color 200ms, padding 250ms" style-hover="color:#A8D4FF; padding-left:4px">{{ l.label }}<span aria-hidden="true" style="font-size:13px; color:#5F6875">↗</span></a>
+        <a href="{{ l.href }}" onClick="{{ closeMenu }}" style="display:flex; align-items:center; justify-content:space-between; min-height:48px; font-family:'Space Grotesk',sans-serif; font-size:16px; color:#E6EAF0; border-bottom:1px solid rgba(255,255,255,0.06); transition:color 200ms, padding 250ms" style-hover="color:#A8D4FF; padding-left:4px">{{ l.label }}<span aria-hidden="true" style="font-size:13px; color:#5F6875"></span></a>
       </sc-for>
     </nav>
-    <a href="#orcamento" onClick="{{ closeMenu }}" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:48px; margin-top:18px; font-size:14px; font-weight:500; color:#05070A; background:#F2F4F7; padding:12px 20px; border-radius:999px; transition:background 250ms" style-hover="background:#A8D4FF; color:#05070A">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+    <a href="#orcamento" onClick="{{ closeMenu }}" style="display:flex; align-items:center; justify-content:center; gap:10px; min-height:48px; margin-top:18px; font-size:14px; font-weight:500; color:#05070A; background:#F2F4F7; padding:12px 20px; border-radius:999px; transition:background 250ms" style-hover="background:#A8D4FF; color:#05070A">Solicitar orçamento <span aria-hidden="true"></span></a>
   </div>
 </sc-if>
 
@@ -124,7 +124,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
       <h1 style="font-family:'DM Serif Display',serif; font-size:clamp(40px,5.2vw + 10px,88px); line-height:1.02; letter-spacing:-0.015em; font-weight:400; margin-top:32px; text-wrap:balance; overflow-wrap:normal">Sites que transformam<br class="hero-br"> presença digital em<br class="hero-br"> <span style="color:#A8D4FF; font-style:italic">experiência.</span></h1>
       <p style="font-family:'Space Grotesk',sans-serif; font-weight:400; font-size:clamp(15px,1.15vw,17px); line-height:1.7; color:#9AA3AF; max-width:440px; margin-top:32px; text-wrap:pretty">Criamos sites profissionais para empresas que querem se posicionar melhor no digital.</p>
       <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:44px">
-        <a href="#projetos" style="display:flex; align-items:center; gap:12px; font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:500; color:#05070A; background:#F2F4F7; padding:14px 22px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-2px)">Ver projetos <span aria-hidden="true">↗</span></a>
+        <a href="#projetos" style="display:flex; align-items:center; gap:12px; font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:500; color:#05070A; background:#F2F4F7; padding:14px 22px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-2px)">Ver projetos</a>
         <a href="#orcamento" style="display:flex; align-items:center; gap:12px; font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:500; color:#F2F4F7; padding:14px 22px; border-radius:999px; border:1px solid rgba(255,255,255,0.18); transition:border-color 250ms, transform 250ms" style-hover="border-color:rgba(168,212,255,0.6); color:#F2F4F7; transform:translateY(-2px)">Quero meu site</a>
       </div>
     </div>
@@ -231,7 +231,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
           <h3 id="av-title" style="font-family:'DM Serif Display',serif; font-size:clamp(26px,2.6vw,40px); line-height:1.05; letter-spacing:-0.005em; font-weight:400">Almeida &amp; Vasconcelos</h3>
           <span style="font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.18em; color:#7C8593">SITE INSTITUCIONAL</span>
         </div>
-        <a href="https://almeidaevasconcelosadvocacia.vercel.app/" target="_blank" rel="noopener" aria-label="Ver projeto Almeida &amp; Vasconcelos Advocacia (abre em nova aba)" style="display:flex; align-items:center; justify-content:center; gap:12px; min-height:48px; font-size:14px; font-weight:500; color:#05070A; background:#A8D4FF; padding:13px 22px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#F2F4F7; color:#05070A; transform:translateY(-2px)">Ver projeto <span aria-hidden="true">↗</span></a>
+        <a href="https://almeidaevasconcelosadvocacia.vercel.app/" target="_blank" rel="noopener" aria-label="Ver projeto Almeida &amp; Vasconcelos Advocacia (abre em nova aba)" style="display:flex; align-items:center; justify-content:center; gap:12px; min-height:48px; font-size:14px; font-weight:500; color:#05070A; background:#A8D4FF; padding:13px 22px; border-radius:999px; transition:transform 250ms, background 250ms" style-hover="background:#F2F4F7; color:#05070A; transform:translateY(-2px)">Ver projeto <span aria-hidden="true"></span></a>
       </div>
     </article>
     </div>
@@ -252,7 +252,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
           <span aria-hidden="true" style="{{ s.dot }}"></span>
           <div style="min-width:0">
             <div style="font-family:'Geist Mono',monospace; font-size:11px; letter-spacing:0.2em; color:#7C8593; margin-bottom:10px">{{ s.n }}</div>
-            <h3 style="{{ s.titleStyle }}">{{ s.t }}<span aria-hidden="true" style="{{ s.arrow }}">↗</span></h3>
+            <h3 style="{{ s.titleStyle }}">{{ s.t }}<span aria-hidden="true" style="{{ s. }}"></span></h3>
             <p style="{{ s.descStyle }}">{{ s.d }}</p>
           </div>
         </li>
@@ -289,7 +289,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
     <h2 id="cta-title" style="font-size:clamp(40px,6vw,92px); line-height:0.98; letter-spacing:-0.045em; font-weight:500; margin:28px auto 0; max-width:900px; text-wrap:balance">Seu próximo projeto começa aqui.</h2>
     <p style="font-size:clamp(15px,1.2vw,17px); line-height:1.6; color:#9AA3AF; margin:28px auto 0; max-width:460px; text-wrap:pretty">Conte um pouco sobre sua empresa e vamos transformar sua ideia em presença digital.</p>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:44px">
-      <a href="#orcamento" style="display:flex; align-items:center; justify-content:center; gap:12px; min-height:52px; font-size:15px; font-weight:500; color:#05070A; background:#F2F4F7; padding:16px 26px; border-radius:999px; box-shadow:0 0 60px -10px rgba(168,212,255,0.45); transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-2px)">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+      <a href="#orcamento" style="display:flex; align-items:center; justify-content:center; gap:12px; min-height:52px; font-size:15px; font-weight:500; color:#05070A; background:#F2F4F7; padding:16px 26px; border-radius:999px; box-shadow:0 0 60px -10px rgba(168,212,255,0.45); transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; color:#05070A; transform:translateY(-2px)">Solicitar orçamento</a>
       <a href="https://wa.me/5583986471317?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Atlas%20Digital%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp (abre em nova aba)" style="display:flex; align-items:center; justify-content:center; gap:12px; min-height:52px; font-size:15px; font-weight:500; color:#F2F4F7; background:rgba(5,7,10,0.4); border:1px solid rgba(255,255,255,0.18); padding:15px 24px; border-radius:999px; transition:transform 250ms, border-color 250ms, color 250ms" style-hover="border-color:#A8D4FF; color:#A8D4FF; transform:translateY(-2px)"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.99 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.07c0 2 .52 3.96 1.52 5.68L.58 23.7l6.08-1.6a11.4 11.4 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05"></path></svg>Falar no WhatsApp</a>
     </div>
   </div>
@@ -321,7 +321,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
           <sc-if value="{{ hasErr }}" hint-placeholder-val="{{ false }}">
             <p role="alert" style="font-size:14px; color:#FFB4A8">{{ fErr }}</p>
           </sc-if>
-          <button type="submit" style="justify-self:{{ submitAlign }}; width:{{ submitW }}; display:flex; align-items:center; justify-content:center; gap:12px; min-height:52px; font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:500; color:#05070A; background:#F2F4F7; border:0; padding:16px 28px; border-radius:999px; cursor:pointer; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; transform:translateY(-2px)">Solicitar orçamento <span aria-hidden="true">↗</span></button>
+          <button type="submit" style="justify-self:{{ submitAlign }}; width:{{ submitW }}; display:flex; align-items:center; justify-content:center; gap:12px; min-height:52px; font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:500; color:#05070A; background:#F2F4F7; border:0; padding:16px 28px; border-radius:999px; cursor:pointer; transition:transform 250ms, background 250ms" style-hover="background:#A8D4FF; transform:translateY(-2px)">Solicitar orçamento <span aria-hidden="true"></span></button>
         </form>
       </sc-if>
       <sc-if value="{{ fSent }}" hint-placeholder-val="{{ false }}">
@@ -330,7 +330,7 @@ input::placeholder,textarea::placeholder{color:#5F6875}
           <h3 style="font-size:clamp(24px,2.2vw,32px); letter-spacing:-0.02em; font-weight:500">Pedido pronto para envio.</h3>
           <p style="font-size:15px; line-height:1.6; color:#9AA3AF; max-width:420px">Finalize o envio na conversa do WhatsApp que abrimos para você.</p>
           <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:6px">
-            <a href="{{ lastWa }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; min-height:48px; font-size:14px; font-weight:500; color:#05070A; background:#A8D4FF; padding:13px 20px; border-radius:999px" style-hover="background:#F2F4F7; color:#05070A">Abrir WhatsApp <span aria-hidden="true">↗</span></a>
+            <a href="{{ lastWa }}" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; min-height:48px; font-size:14px; font-weight:500; color:#05070A; background:#A8D4FF; padding:13px 20px; border-radius:999px" style-hover="background:#F2F4F7; color:#05070A">Abrir WhatsApp <span aria-hidden="true"></span></a>
             <button type="button" onClick="{{ resetForm }}" style="min-height:48px; font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:500; color:#F2F4F7; background:transparent; border:1px solid rgba(255,255,255,0.18); padding:13px 20px; border-radius:999px; cursor:pointer" style-hover="border-color:#A8D4FF">Editar pedido</button>
           </div>
         </div>
@@ -362,8 +362,8 @@ input::placeholder,textarea::placeholder{color:#5F6875}
     <div>
       <div style="font-family:'Geist Mono',monospace; font-size:10.5px; letter-spacing:0.2em; color:#7C8593; margin-bottom:18px">CONTATO</div>
       <div style="display:flex; flex-direction:column; gap:10px">
-        <a href="https://www.instagram.com/atlasdigital.jp" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; font-size:14px; color:#C9D0D9; transition:color 200ms, transform 200ms" style-hover="color:#A8D4FF; transform:translateX(2px)"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"></circle></svg>@atlasdigital.jp ↗</a>
-        <a href="https://wa.me/5583986471317" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; font-size:14px; color:#C9D0D9; transition:color 200ms, transform 200ms" style-hover="color:#A8D4FF; transform:translateX(2px)"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.99 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.07c0 2 .52 3.96 1.52 5.68L.58 23.7l6.08-1.6a11.4 11.4 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05"></path></svg>WhatsApp ↗</a>
+        <a href="https://www.instagram.com/atlasdigital.jp" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; font-size:14px; color:#C9D0D9; transition:color 200ms, transform 200ms" style-hover="color:#A8D4FF; transform:translateX(2px)"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"></circle></svg>@atlasdigital.jp </a>
+        <a href="https://wa.me/5583986471317" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; font-size:14px; color:#C9D0D9; transition:color 200ms, transform 200ms" style-hover="color:#A8D4FF; transform:translateX(2px)"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.99 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.68 12.07c0 2 .52 3.96 1.52 5.68L.58 23.7l6.08-1.6a11.4 11.4 0 0 0 5.39 1.37h.01c6.27 0 11.37-5.1 11.37-11.37 0-3.04-1.18-5.9-3.33-8.05"></path></svg>WhatsApp </a>
       </div>
     </div>
   </div>
@@ -497,7 +497,7 @@ class Component extends DCLogic {
     const hov = this.state.hovSvc;
     const services = svc.map((s, i) => {
       const f = cfg[i], on = hov === i, clip = cut(f.corner), cc = svcC;
-      const arrowRight = f.corner === 'tr' ? cc - 8 : 0;
+      const Right = f.corner === 'tr' ? cc - 8 : 0;
       return {
         n: '0' + (i + 1), title: s[0], desc: s[1],
         enter: () => this.setState({ hovSvc: i }),
@@ -512,7 +512,7 @@ class Component extends DCLogic {
             ? (on ? 'radial-gradient(90% 70% at 0% 0%, rgba(60,105,170,0.30) 0%, transparent 60%), linear-gradient(165deg, #0F1D33 0%, #0A1322 50%, #070B12 100%)' : 'radial-gradient(90% 70% at 0% 0%, rgba(60,105,170,0.22) 0%, transparent 60%), linear-gradient(165deg, #0D192C 0%, #09111E 50%, #06090F 100%)')
             : ('radial-gradient(' + (isDesk ? '70% 120% at 0% ' + (i === 1 ? '100%' : '0%') : '120% 70% at ' + (tab && i === 2 ? '0%' : '50%') + ' 0%') + ', rgba(60,105,170,' + (on ? 0.22 : 0.14) + ') 0%, transparent 65%), ' + (on ? 'linear-gradient(165deg, #0F1B2E 0%, #0A111D 60%, #070B12 100%)' : 'linear-gradient(165deg, #0B1524 0%, #080E18 60%, #06090F 100%)')),
           transition: 'background 400ms' },
-        arrow: { flex: 'none', marginRight: arrowRight + 'px', width: '34px', height: '34px', borderRadius: '50%', display: 'grid', placeItems: 'center',
+        : { flex: 'none', marginRight: Right + 'px', width: '34px', height: '34px', borderRadius: '50%', display: 'grid', placeItems: 'center',
           border: '1px solid ' + (on ? 'rgba(168,212,255,0.55)' : 'rgba(255,255,255,0.14)'), color: on ? '#A8D4FF' : '#C9D0D9',
           transform: on ? 'translate(2px,-2px)' : 'none', transition: 'transform 400ms, border-color 400ms, color 400ms' },
         titleStyle: { fontFamily: "'DM Serif Display',serif", fontWeight: 400, letterSpacing: '0.005em', lineHeight: 1, color: '#F2F4F7', textWrap: 'balance', overflowWrap: 'anywhere',
@@ -543,7 +543,7 @@ class Component extends DCLogic {
           transition: 'background 320ms ease, border-color 320ms ease, box-shadow 320ms ease' },
         titleStyle: { display: 'flex', alignItems: 'baseline', gap: '10px', fontSize: '22px', letterSpacing: '-0.02em', fontWeight: 500,
           color: cur ? '#F2F4F7' : '#AEB6C2', transform: cur ? 'translateX(2px)' : 'none', transformOrigin: 'left center', transition: 'color 320ms ease, transform 320ms ease' },
-        arrow: { fontSize: '14px', fontWeight: 400, color: '#A8D4FF', opacity: cur ? 1 : 0, transform: cur ? 'translate(0,0)' : 'translate(-4px,4px)', transition: 'opacity 320ms ease, transform 320ms ease' },
+        : { fontSize: '14px', fontWeight: 400, color: '#A8D4FF', opacity: cur ? 1 : 0, transform: cur ? 'translate(0,0)' : 'translate(-4px,4px)', transition: 'opacity 320ms ease, transform 320ms ease' },
         descStyle: { fontSize: '15px', lineHeight: 1.55, marginTop: '10px', maxWidth: '260px', textWrap: 'pretty', color: cur ? '#C9D0D9' : '#7C8593', transition: 'color 320ms ease' }
       };
     });
